@@ -2,23 +2,27 @@
 @import "tw-animate-css";
 
 .bg-black-gradient {
-  @apply bg-gradient-to-b from-[#000000] to-[#444444] text-white;
+  @apply bg-gradient-to-b from-[#000000] to-[#444444] text-white hover:from-[#111111] hover:to-[#333333];
 }
 
 .bg-blue-gradient {
-  @apply bg-gradient-to-b from-[#559EFF] to-[#AFD2FF];
+  @apply bg-gradient-to-b from-[#559EFF] to-[#AFD2FF] hover:from-[#488CDB] hover:to-[#9AC2E9];
 }
 
 .bg-purple-gradient {
-  @apply bg-gradient-to-b from-[#BA3BFF] to-[#E5B5FF];
+  @apply bg-gradient-to-b from-[#BA3BFF] to-[#E5B5FF] hover:from-[#A02FE3] hover:to-[#D2A2EC];
 }
 
 .bg-red-gradient {
-  @apply bg-gradient-to-b from-[#FF3B3B] to-[#FF8888];
+  @apply bg-gradient-to-b from-[#FF3B3B] to-[#FF8888] hover:from-[#E03232] hover:to-[#E37676];
 }
 
 .bg-white-blur {
-  @apply bg-white/50 backdrop-blur-2xl;
+  @apply bg-white/50 backdrop-blur-2xl hover:bg-white/40;
+}
+
+.techstack-marquee:hover div {
+  animation-play-state: paused;
 }
 
 @custom-variant dark (&:is(.dark *));

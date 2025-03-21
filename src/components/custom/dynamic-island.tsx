@@ -7,8 +7,7 @@ const DynamicIsland = () => {
   return (
     <motion.div
       className='dynamic-island min-w-32 min-h-7 hover:scale-110 bg-black text-white rounded-full flex items-center px-2.5 py-2.5/2 gap-2.5 cursor-pointer transition-all'
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onClick={() => isHovered && setIsHovered(false)}
       animate={{ translate: 100 }}>
       <div className='circle size-2 rounded-full bg-green-400'></div>
       <motion.nav
