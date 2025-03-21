@@ -1,6 +1,22 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.bg-blue-gradient {
+  @apply bg-gradient-to-b from-[#559EFF] to-[#AFD2FF];
+}
+
+.bg-purple-gradient {
+  @apply bg-gradient-to-b from-[#BA3BFF] to-[#E5B5FF];
+}
+
+.bg-red-gradient {
+  @apply bg-gradient-to-b from-[#FF3B3B] to-[#FF8888];
+}
+
+.bg-white-blur {
+  @apply bg-white/70 backdrop-blur-2xl;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

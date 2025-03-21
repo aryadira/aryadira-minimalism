@@ -1,9 +1,9 @@
 import { Button } from "../ui/button";
 import { Moon } from "lucide-react";
 
-const SwitchMode = () => {
+const ThemeToggle = () => {
   return (
-    <div className='switch-mode'>
+    <div className='theme-toggle'>
       <Button className='mode'>
         <span>Dark Mode</span>
         <Moon />
@@ -12,4 +12,4 @@ const SwitchMode = () => {
   );
 };
 
-export default SwitchMode;
+export default ThemeToggle;
