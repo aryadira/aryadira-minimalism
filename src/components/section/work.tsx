@@ -13,7 +13,10 @@ const workTab = [
 const Work = () => {
   const [activeTab, setActiveTab] = useState("all");
 
-  const filteredWork = activeTab === "all" ? workProjects : workProjects.filter((work) => work.accessor === activeTab);
+  const filteredWork =
+    activeTab === "all"
+      ? workProjects
+      : workProjects.filter((work) => (Array.isArray(work.accessor) ? work.accessor.includes(activeTab) : work.accessor === activeTab));
 
   return (
     <SectionBlur id='work' className='work'>
