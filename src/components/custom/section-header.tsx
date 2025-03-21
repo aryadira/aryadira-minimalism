@@ -7,11 +7,9 @@ interface SectionHeaderProps {
 
 const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
   return (
-    <div className='section-header bg-white-blur border-2 border-white p-5 rounded-lg'>
-      <div className='title-header'>
-        <div className='title text-2xl mb-2.5'>{title}</div>
-        <div className='subtitle text-base'>{subtitle}</div>
-      </div>
+    <div className='title-section-header mb-5'>
+      <div className='title text-2xl mb-2.5'>{title}</div>
+      <div className='subtitle text-base'>{subtitle}</div>
     </div>
   );
 };

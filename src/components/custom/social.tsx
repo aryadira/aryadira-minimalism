@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Social = () => {
   return (
-    <div className='social block bg-white flex items- gap-1.5 p-1.5 rounded-sm cursor-pointer hover:scale-110 shadow-xs transition-all'>
+    <div className='social bg-white flex items-center gap-1.5 p-1.5 rounded-sm cursor-pointer hover:scale-110 shadow-xs transition-all'>
       <span className='hover:scale-120 transition-all'>
         <Image src={instagram} width={24} height={24} alt='instagram' />
       </span>

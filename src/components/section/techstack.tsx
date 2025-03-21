@@ -1,13 +1,13 @@
 import { techstacks } from "@/lib/constant/techstacks";
 import Image from "next/image";
-import SectionHeader from "../custom/section-header";
+import { SectionBlur, SectionHeader } from "../custom";
 
 const Techstack = () => {
   return (
-    <section id='techstack' className='techstack flex flex-col gap-2.5'>
+    <SectionBlur id='techstack' className='techstack flex flex-col gap-2.5 bg-white-blur border-2 border-white p-5 rounded-xl'>
       <SectionHeader title='Tech Stack & Tools' subtitle='The technologies and tools i use to design, develop, and bring ideas to life.' />
       <TechStackList />
-    </section>
+    </SectionBlur>
   );
 };
 
