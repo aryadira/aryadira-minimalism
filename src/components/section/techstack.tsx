@@ -21,11 +21,8 @@ const TechStackList = () => {
   }, [controls]);
 
   return (
-    <div
-      className='overflow-hidden w-full'
-      onMouseEnter={() => controls.stop()} // Pause saat hover
-      onMouseLeave={() => controls.start({ x: ["0%", "-100%"], transition: { repeat: Infinity, duration: 10, ease: "linear" } })}>
-      <motion.div className='flex gap-5' animate={{ x: ["0%", "-100%"] }} transition={{ ease: "linear", repeat: Infinity, duration: 15 }}>
+    <div className='overflow-hidden w-full'>
+      <motion.div className='flex gap-5' animate={{ x: ["0%", "-100%"] }} transition={{ ease: "linear", repeat: Infinity, duration: 20 }}>
         {[...techstacks, ...techstacks].map((ts, index) => (
           <div
             className='bg-white-blur border-2 border-white py-8 px-5 rounded-lg flex flex-col items-center justify-between min-w-[150px]'

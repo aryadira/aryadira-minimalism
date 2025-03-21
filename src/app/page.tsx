@@ -7,6 +7,8 @@ import violetCircleGradient from "@/assets/imgs/Violet - Gradient Burst.svg";
 
 import { Header } from "@/components/custom";
 import { About, Footer, Techstack, Work } from "@/components/section";
+import FadeContent from "@/rb/animations/FadeContent/FadeContent";
+import TiltedCard from "@/rb/components/TiltedCard/TiltedCard";
 
 export default function Home() {
   return (
@@ -38,11 +40,21 @@ export default function Home() {
 
       <div className='content w-full px-2.5 flex flex-col gap-2.5 z-10 relative'>
         {/* Content */}
-        <Header />
-        <About />
-        <Techstack />
-        <Work />
-        <Footer />
+        <FadeContent blur={true} duration={1000} easing='ease-out' initialOpacity={0}>
+          <Header />
+        </FadeContent>
+        <FadeContent blur={true} duration={1200} easing='ease-out' initialOpacity={0}>
+          <About />
+        </FadeContent>
+        <FadeContent blur={true} duration={1300} easing='ease-out' initialOpacity={0}>
+          <Techstack />
+        </FadeContent>
+        <FadeContent blur={true} duration={1400} easing='ease-out' initialOpacity={0}>
+          <Work />
+        </FadeContent>
+        <FadeContent blur={true} duration={1500} easing='ease-out' initialOpacity={0}>
+          <Footer />
+        </FadeContent>
       </div>
     </div>
   );
