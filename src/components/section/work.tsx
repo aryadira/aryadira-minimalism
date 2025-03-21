@@ -39,7 +39,7 @@ const Work = () => {
 
       {/* 🔥 Work List with Animation */}
       <motion.div
-        className='work-content grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5'
+        className='work-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5'
         key={activeTab} // Memastikan animasi dipicu saat tab berubah
         initial={{ opacity: 0 }} // Muncul dengan fade-in
         animate={{ opacity: 1 }}

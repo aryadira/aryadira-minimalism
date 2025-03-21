@@ -3,7 +3,7 @@ import { Camera, File, Palette, User } from "lucide-react";
 
 const Interaction = () => {
   return (
-    <div className='interaction my-12 flex items-center justify-between'>
+    <div className='interaction my-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-5'>
       <div className='left-side flex items-center gap-2.5'>
         <Button
           className='bg-black-gradient'>
