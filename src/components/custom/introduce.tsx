@@ -1,8 +1,6 @@
-import BlurText from "@/rb/text_animations/BlurText/BlurText";
-
-const handleAnimationComplete = () => {
-  console.log("Animation completed!");
-};
+// const handleAnimationComplete = () => {
+//   console.log("Animation completed!");
+// };
 
 const Introduce = () => {
   return (
