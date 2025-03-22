@@ -15,7 +15,7 @@ const Interaction = () => {
       </div>
       <div className='right-side flex items-center gap-2.5'>
         <Button className='bg-blue-gradient text-white'>
-          <span>It's me</span>
+          <span>It&apos;s me</span>
           <Camera />
         </Button>
         <Button className='bg-purple-gradient text-white'>

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import MainLayout from "@/layouts/main";
-import Aurora from "@/rb/bacgrounds/Aurora/Aurora";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",

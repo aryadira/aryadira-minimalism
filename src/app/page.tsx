@@ -8,7 +8,6 @@ import violetCircleGradient from "@/assets/imgs/Violet - Gradient Burst.svg";
 import { Header } from "@/components/custom";
 import { About, Footer, Techstack, Work } from "@/components/section";
 import FadeContent from "@/rb/animations/FadeContent/FadeContent";
-import TiltedCard from "@/rb/components/TiltedCard/TiltedCard";
 
 export default function Home() {
   return (
