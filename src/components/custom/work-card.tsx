@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface WorkCardProps {
   title: string;
-  image: string;
+  image: string | StaticImageData;
   category: string;
   year: number;
 }
