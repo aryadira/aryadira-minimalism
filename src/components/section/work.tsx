@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { SectionBlur, SectionHeader, WorkCard } from "../custom";
 import { Button } from "../ui/button";
 import { workProjects } from "@/lib/constant/workProjects";
+import instagram from "@/assets/imgs/ig.png";
+import Image from "next/image";
 
 const workTab = [
   { name: "All Work", key: "all" },
@@ -35,6 +37,12 @@ const Work = () => {
             {tab.name}
           </Button>
         ))}
+        <a href='https://www.instagram.com/dira.sign/' target='_blank'>
+          <Button className={`rounded-full transition-all duration-300 bg-instagram text-white`}>
+            <Image src={instagram} width={24} height={24} alt='instagram' />
+            See More On Instagram
+          </Button>
+        </a>
       </div>
 
       {/* 🔥 Work List with Animation */}

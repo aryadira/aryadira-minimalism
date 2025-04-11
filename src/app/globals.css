@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.bg-instagram {
+  @apply bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] hover:from-[#6e2a9c] hover:via-[#e31212] hover:to-[#e6a336];
+}
+
 .bg-black-gradient {
   @apply bg-gradient-to-b from-[#000000] to-[#444444] text-white hover:from-[#111111] hover:to-[#333333];
 }
