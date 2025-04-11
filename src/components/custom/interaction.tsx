@@ -5,9 +5,10 @@ const Interaction = () => {
   return (
     <div className='interaction my-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-5'>
       <div className='left-side flex items-center gap-2.5'>
-        <Button
-          className='bg-black-gradient'>
-          <span>Curriculum Vitae</span>
+        <Button className='bg-black-gradient'>
+          <span>
+            <a href='https://drive.google.com/file/d/1AwaCzeiVlM6mhQ_8JPmxKwWMQLoOMIfQ/view?usp=sharing' target="_blank">Curriculum Vitae</a>
+          </span> 
           <File />
         </Button>
         <div className='line inline-block w-[0.5px] h-5 bg-black'></div>
