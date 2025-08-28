@@ -11,7 +11,7 @@ import FadeContent from "@/rb/animations/FadeContent/FadeContent";
 
 export default function Home() {
   return (
-    <div className='home relative w-full max-w-[1440px]'>
+    <div className='home relative w-full max-w-[1440px] flex flex-col items-center'>
       {/* Background Gradient */}
 
       {/* blue left top */}
@@ -37,7 +37,7 @@ export default function Home() {
       {/* blue right bottom */}
       <Image width={2000} src={blueCircleGradient} alt='blue' className='absolute right-0 bottom-0 translate-x-1/2 z-0 pointer-events-none' />
 
-      <div className='content w-full px-2.5 flex flex-col gap-2.5 z-10 relative'>
+      <div className='content w-full max-w-5xl px-2.5 flex flex-col gap-2.5 z-10 relative'>
         {/* Content */}
         <FadeContent blur={true} duration={1000} easing='ease-out' initialOpacity={0}>
           <Header />
